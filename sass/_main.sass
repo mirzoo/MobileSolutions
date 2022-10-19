@@ -1,0 +1,64 @@
+.main
+    &-wrap
+        padding: 0px 16px
+        margin-top: 60px
+        display: flex
+        flex-direction: column
+        align-content: center
+        align-items: center
+    &-text
+        margin-bottom: 70px
+        text-align: center
+        &__title
+            max-width: 850px
+            margin: 0 auto
+            font-size: 58px
+            line-height: 66px
+            font-weight: 700
+            text-transform: uppercase
+            color: #ffffff
+        &__subtitle
+            max-width: 630px
+            margin: 16px auto 0
+            font-size: 16px
+            line-height: 25px
+            font-weight: 400
+            color: rgba(255, 255, 255, 0.5)
+    &-content
+        position: relative
+        &__arrow
+            position: absolute
+            right: 60px
+            top: -40px
+            width: 68px
+            height: 68px
+            background-color: #00DE16
+            box-shadow: 0px 10px 32px rgba(0, 222, 22, 0.2)
+            border-radius: 100px
+            display: flex
+            align-content: center
+            align-items: center
+            justify-content: center
+            transition: 0.3s
+            &:hover
+                box-shadow: 0px 10px 32px rgba(0, 222, 22, 0.555)
+                width: 80px
+                height: 80px
+            &:active
+                box-shadow: 0px 10px 32px rgba(0, 222, 22, 0.103)
+                background-color: #037e0f
+        &__img
+            height: 250px
+            overflow: hidden
+            border-radius: 32px
+            box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.20)
+            object-fit: cover
+
+
+
+@media (max-width: 375px)
+    .main
+        &-text
+            &__title
+                font-size: 45px
+                line-height: 53px
