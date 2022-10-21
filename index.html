@@ -21,12 +21,13 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon//favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon//favicon-16x16.png">
     <link rel="manifest" href="./img/favicon//manifest.json">
-    <meta name="msapplication-TileColor" content="#181A20">
+    <meta name="msapplication-TileColor" content="#00DE16">
     <meta name="msapplication-TileImage" content="./img/favicon//ms-icon-144x144.png">
     <meta name="theme-color" content="#181A20">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -44,10 +45,10 @@
 
                 <nav class="header-menu">
                     <ul class="header-list">
-                        <li><a href="./index.html" class="header-link">Main</a></li>
-                        <li><a href="./privacy.html" class="header-link">Portfolio</a></li>
-                        <li><a href="./terms.html" class="header-link">About us</a></li>
-                        <li><a href="./support.html" class="header-link">Contact</a></li>
+                        <li><a href="#home" class="header-link">Main</a></li>
+                        <li><a href="#portfolio" class="header-link">Our Team</a></li>
+                        <li><a href="#about" class="header-link">About us</a></li>
+                        <li><a href="#contact" class="header-link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -87,13 +88,19 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="portfolio-wrap">
-                <h1 class="portfolio-title">Our Portfolio</h1>
+                <h1 class="portfolio-title">Our Team</h1>
 
-                <div class="portfolio-slider">
-                    <div class="portfolio-card">
+                <div class="portfolio-content">
+                    <h2 class="portfolio-content__text">Our team brings together the best specialists in their field. We have extensive experience in launching an application from scratch. Our team can only take on the design or just the development, but we can also take on all the work from analytics, design, development to the launch of the application.
+                    </h2>
+
+                    <img src="./img/portfolio.png" alt="img" class="portfolio-content__img">
+                </div>
+
+                    <!-- <div class="portfolio-card">
                         <div class="portfolio-card__content">
                         <img src="./img/work1.png" alt="portfolio" class="portfolio-card__img">
                         </div>
@@ -104,14 +111,14 @@
 
                             <a href="#" class="portfolio-card__btn">See Details</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about-wrap">
                 <h1 class="about-title">Mobile Solutions Inside</h1>
@@ -120,7 +127,7 @@
         </div>
     </section>
 
-    <secttion class="contact">
+    <secttion class="contact" id="contact">
         <div class="container">
             <div class="contact-wrap">
                 <div class="contact-text">
@@ -143,7 +150,7 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
